@@ -1,6 +1,6 @@
 <template>
   <section>
-    <ul>
+    <transition-group name="list" tag="ul">
       <li v-for="(todoItem,index) in propsdata" v-bind:key="todoItem" class="shadow">
         <i class="checkBtn fas fa-check"></i>
         {{todoItem}}
@@ -8,7 +8,7 @@
           <i class="far fa-trash-alt"></i>
         </span>
       </li>
-    </ul>
+    </transition-group>
   </section>
 </template>
 
